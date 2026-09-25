@@ -47,7 +47,7 @@ The project demonstrates the ability to transform transactional retail data into
 
   ## Certificate
 
-[Tata Data Visualisation Virtual Experience Certificate](TATA Certificate.pdf)
+[Tata Data Visualisation Virtual Experience Certificate](TATA%20Certificate.pdf)
 
 ## Author
 
