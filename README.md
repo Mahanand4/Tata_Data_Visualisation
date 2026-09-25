@@ -45,6 +45,10 @@ The project demonstrates the ability to transform transactional retail data into
 - Data Visualisation
 - Data Analysis
 
+  ## Certificate
+
+[Tata Data Visualisation Virtual Experience Certificate](TATA_Certificate.pdf)
+
 ## Author
 
 Submitted by: Mahanand B Shetty
