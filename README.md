@@ -323,8 +323,4 @@ The repository contains:
 
 (https://github.com/Mahanand4/Tata_Data_Visualisation)
 
----
 
-# Prepared by
-
-**Mahanand B Shetty**
