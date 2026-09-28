@@ -312,15 +312,17 @@ The project demonstrates an end-to-end approach to transforming retail transacti
 
 The repository contains:
 
-- **Power BI Analysis File** – Interactive Power BI analysis
-- **Final Project Report** – Detailed project documentation
-- **Tata Certificate** – Virtual experience completion certificate
-- **README.md** – Project overview, analysis, insights, and recommendations
+- **Power BI Analysis File** - Interactive Power BI analysis
+- **Tata_Data_Visualisation_Final.pdf** - Detailed final project report
+- **TATA Certificate.pdf** - Virtual experience completion certificate
+- **README.md** - Project overview, analysis, insights, and recommendations
 
 ---
 
 # GitHub Repository
 
-(https://github.com/Mahanand4/Tata_Data_Visualisation)
+https://github.com/Mahanand4/Tata_Data_Visualisation
 
+## Certificate
 
+[Tata Data Visualisation Virtual Experience Certificate](TATA%20Certificate.pdf)
