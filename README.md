@@ -3,15 +3,12 @@
 ## Project Overview
 
 This project was completed as part of the Tata Data Visualisation Virtual Experience, focusing on analysing online retail transaction data and converting the analysis into meaningful business insights.
-
 The objective was to explore revenue trends, country-level performance, customer revenue contribution, and geographic demand using Microsoft Power BI.
-
 The analysis was designed to support business decision-making by identifying sales patterns, high-performing markets, valuable customers, and potential areas for growth.
 
 ---
 
 ## Business Objective
-
 The business required an analysis of online retail transaction data to help senior stakeholders understand:
 
 - How revenue changes over time
