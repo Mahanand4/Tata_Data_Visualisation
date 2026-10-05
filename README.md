@@ -291,6 +291,17 @@ The project demonstrates an end-to-end approach to transforming retail transacti
 
 ---
 
+## Challenges & Limitations
+1. Incomplete December data:The dataset contains incomplete transaction records for December 2011. Therefore, December revenue and sales should be interpreted cautiously and should not be directly compared with complete months without considering data completeness.
+Data quality issues: The raw transaction data required data cleaning and preparation before analysis. Inconsistent or missing values had to be identified and handled to ensure reliable reporting.
+2. Limited historical period: The available data covers a limited period, which restricts the ability to perform long-term trend and year-over-year analysis.
+3. Limited business context: The dataset primarily contains transaction-level information. Additional information such as marketing activities, pricing strategy, product costs, inventory levels and customer demographics was not available, making it difficult to determine the exact reasons behind some trends.
+4. Revenue-focused analysis: The analysis mainly evaluates sales/revenue performance. Since detailed cost and expense information is not available, profitability and margin analysis could not be performed comprehensively.
+5. Customer behaviour limitations: Customer analysis is based on recorded purchase transactions. The dataset does not provide sufficient information about customer preferences, demographics or reasons for purchasing behaviour.
+6. Geographic analysis limitations: Country-level differences in sales can be identified, but the available data does not explain external factors such as market size, competition, local demand or economic conditions that may influence performance.
+Limited ability to establish causation: The analysis identifies trends, patterns and relationships in the data, but these observations do not necessarily prove that one factor directly caused another.
+7. Data-driven recommendations: The recommendations are based on the information available in the dataset. Additional business and operational data would be required before implementing major strategic decisions.
+
 # Skills Demonstrated
 
 - Microsoft Power BI
