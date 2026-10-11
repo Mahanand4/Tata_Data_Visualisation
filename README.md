@@ -10,14 +10,15 @@ The analysis was designed to support business decision-making by identifying sal
 
 ## Business Objective
 The business required an analysis of online retail transaction data to help senior stakeholders understand:
-
-- How revenue changes over time
-- Which countries generate the highest revenue and sales volume
-- Which customers contribute the most revenue
-- Which geographic markets show strong product demand
-- Where potential opportunities for business expansion may exist
-
-The analysis focused on producing clear and actionable insights rather than only presenting visualisations.
+- Analyze overall revenue performance and monthly revenue trends.
+- Identify the products contributing the most to total revenue.
+- Measure the revenue contribution of the top 10 customers.
+- Calculate Average Order Value (AOV).
+- Identify high-revenue and low-revenue months.
+- Compare revenue performance across countries.
+- Investigate potential growing and declining markets.
+- Support conclusions with numerical evidence.
+- Provide actionable business recommendations.
 
 ---
 
@@ -43,17 +44,16 @@ A geographic visualisation was used to understand product demand across countrie
 
 ## Dataset
 
-The project uses an Online Retail transaction dataset containing information related to customer purchases.
+ **InvoiceNo:** Unique transaction or invoice identifier.
+- **StockCode:** Product identifier.
+- **Description:** Product description.
+- **Quantity:** Number of units purchased.
+- **InvoiceDate:** Transaction date and time.
+- **UnitPrice:** Price per unit.
+- **CustomerID:** Customer identifier.
+- **Country:** Country associated with the transaction.
 
-Key fields used in the analysis include:
-
-- Invoice Date
-- Country
-- Customer ID
-- Quantity
-- Unit Price
-- Revenue
-
+A Revenue field was used to analyze sales performance.
 ---
 
 ## Data Preparation
@@ -74,51 +74,164 @@ The main preparation steps included:
 ### Microsoft Power BI
 
 Used for:
+- Microsoft Power BI Desktop
+- Power Query
+- DAX (Data Analysis Expressions)
+- Data Cleaning and Transformation
+- Exploratory Data Analysis
+- Data Visualization
+- KPI Development
+- Business Intelligence and Reporting
 
-- Data preparation
-- Data analysis
-- Data visualisation
-- Filtering
-- Geographic analysis
-- Business insight generation
+##  Project Methodology
 
-### GitHub
+###  Data Import
 
-Used to store and present the project files and documentation.
+Imported the Online Retail dataset into Power BI for data preparation, analysis, and dashboard development.
+
+###  Data Cleaning and Transformation
+
+- Reviewed the dataset for missing and invalid values.
+- Examined data types and transaction fields.
+- Converted InvoiceDate to the appropriate date format for time-based analysis.
+- Checked numeric fields, including Quantity and UnitPrice.
+- Reviewed missing dates and other data-quality issues.
+- Prepared the data for revenue, customer, product, and market analysis.
+
+###  Revenue Calculation
+Revenue was calculated using the following formula:
+Revenue = Quantity × UnitPrice
+
+### Data Analysis
+Analyzed retail transactions to identify monthly revenue fluctuations, high-performing products, customer revenue contribution, average order value, and country-level performance.
+
+### Dashboard Development
+
+Created Power BI report pages covering:
+- Revenue Analysis
+- Product Revenue Analysis
+- Market Analysis
+The report includes KPI cards, bar charts, monthly revenue trends, and written business insights.
+
+## DAX Measure
+
+### Average Order Value (AOV)
+
+The following DAX measure calculates revenue per distinct invoice:
+```dax
+Average Order Value =
+DIVIDE(
+SUM('Online Retail Data Set'[Revenue]),
+DISTINCTCOUNT('Online Retail Data Set'[InvoiceNo])
+)
+```
+
+**Interpretation:** Average Order Value represents total revenue divided by the number of distinct invoices under the selected report filters.The result depends on the filters applied and how cancellations or credit notes are handled in the dataset.
+
+##  Key Performance Indicators (KPIs)
+- Total Revenue
+- Average Order Value (AOV)
+- Top 10 Customer Revenue Contribution
+- Top 10 Product Revenue Contribution
+- Monthly Revenue Performance
+- Country-Level Revenue Performance
+
+##  Key Findings and Analysis
+
+###  Revenue Analysis
+
+- The dashboard displays total revenue of approximately **1.60M**.
+- Monthly revenue analysis highlights fluctuations across the observed period. May and November 2011 recorded strong revenue performance, while August 2011 showed a lower value than May.
+- These differences provide opportunities to investigate the products, customers, and markets associated with revenue changes.
+
+###  Product Revenue Analysis
+
+- The Top 10 Products by Revenue chart identifies the products generating the highest revenue.
+- The Top 10 products contribute approximately **14.92% of total revenue**, according to the dashboard KPI.
+- This analysis helps identify important revenue-generating products and supports product-level inventory and sales planning.
+
+###  Customer Revenue Analysis
+
+- The Top 10 customers contribute approximately **49.74% of total revenue**, according to the dashboard KPI.
+- This indicates that a substantial share of revenue is associated with a relatively small group of customers.
+- Customer contribution analysis can support customer retention, relationship management, and targeted marketing strategies.
+
+###  Average Order Value
+- The Average Order Value card displays approximately **791.21**.
+- AOV measures average revenue per distinct invoice under the selected filters. It can help evaluate purchasing value and assess opportunities to increase the value of customer orders.
+
+###  Market Analysis
+
+- The dashboard compares revenue across countries, including the Netherlands, EIRE, Germany, France, and Australia.
+- The Top 5 Countries by Revenue chart helps identify markets with strong revenue contributions. The monthly revenue trends chart supports comparisons of market performance over time.
+- Further investigation is needed to establish the causes of market-level growth or decline.
+
+##  Numerical Evidence
+
+The following figures were recorded from the Power BI dashboard:
+- **Total Revenue:** Approximately 1.60M.
+- **Top 10 Customer Revenue Contribution:** 49.74% of total revenue.
+- **Top 10 Product Revenue Contribution:** 14.92% of total revenue.
+- **May 2011 Revenue:** 69,041.42, one of the highest monthly revenue values observed.
+- **August 2011 Revenue:** 32,277.74, showing a decline compared with May.
+- **November 2011 Revenue:** 66,241.79, showing another strong revenue month.
+- **December 2011 Revenue:** 52,554.01, lower than November.
+
+These figures provide numerical support for the revenue, product, and customer analysis.The monthly values show revenue fluctuations, but they do not independently establish the causes of those changes or prove recurring seasonal patterns.
+
+##  Business Recommendations
+
+### 1 Investigate Revenue Growth and Decline:
+Investigate the products and markets contributing to high-revenue months. Review the factors behind the August decline by comparing product, customer, and country-level performance.
+
+### 2 Prioritize High-Performing Products:
+Monitor leading products, maintain suitable stock availability, and evaluate product-level revenue trends before making inventory decisions.
+
+### 3 Strengthen Customer Retention:
+Develop appropriate retention strategies for high-value customers, monitor repeat purchases, and investigate opportunities to improve customer lifetime value.
+
+### 4 Improve Average Order Value:
+Evaluate product bundles, cross-selling, and complementary-product promotions to encourage customers to purchase additional items.
+
+### 5 Evaluate Market Performance:
+Prioritize investigation of high-performing markets and explore potential improvement opportunities in weaker markets. Use country-level data to guide targeted promotions and market strategies.
+
+### 6 Plan Inventory and Promotions
+Use observed revenue trends to support inventory and promotional planning. Validate recurring seasonal patterns across comparable periods before making seasonal forecasts.
+
+##  Business Impact
+
+This project demonstrates how Power BI can transform retail transaction data into meaningful business intelligence.
+
+The dashboard supports:
+
+- Monitoring overall revenue performance.
+- Identifying important products and customers.
+- Evaluating average order value.
+- Comparing country-level market performance.
+- Investigating monthly revenue fluctuations.
+- Supporting inventory and promotional planning.
+- Making evidence-based business recommendations.
+
+## Skills Demonstrated
+
+- Data Cleaning and Transformation
+- Power Query
+- DAX Measures
+- KPI Development
+- Revenue Analysis
+- Product Performance Analysis
+- Customer Revenue Analysis
+- Time-Series Analysis
+- Market Performance Analysis
+- Dashboard Design
+- Data Visualization
+- Business Insight Generation
+- Data-Driven Decision-Making
 
 ---
 
-# Dashboard Analysis
-
-## 1. Monthly Revenue Trend
-
-### Objective
-
-Analyse monthly revenue performance and identify periods of higher and lower sales activity.
-
-### Visualisation
-
-A line chart was used to display monthly revenue throughout 2011.
-
-### Key Insight
-
-Revenue fluctuated throughout the year, with a notable peak in May and another strong increase in November.
-
-Revenue was comparatively lower in February and August.
-
-### Business Implication
-
-The business can use historical monthly patterns to support:
-
-- Inventory planning
-- Marketing campaign timing
-- Sales forecasting
-- Promotional planning
-- Resource allocation during higher-demand periods
-
----
-
-## 2. Top 10 Countries by Revenue and Quantity
+##  Top 10 Countries by Revenue and Quantity
 
 ### Objective
 
@@ -146,7 +259,7 @@ These markets can be monitored closely for:
 
 ---
 
-## 3. Top 10 Customers by Revenue
+##  Top 10 Customers by Revenue
 
 ### Objective
 
@@ -159,24 +272,9 @@ A column chart ranks the top 10 customers according to revenue generated.
 ### Key Insight
 
 The analysis shows that revenue is distributed across several high-value customers, although the leading customer contributes substantially more revenue than the remaining customers.
-
 The highest-revenue customer shown in the analysis is Customer ID 14646.
 
-### Business Implication
-
-High-value customers are important for maintaining recurring revenue. The business can consider:
-
-- Customer retention strategies
-- Personalised offers
-- Loyalty initiatives
-- Targeted communication
-- Monitoring purchasing behaviour
-
-At the same time, continuing to diversify the customer base can reduce dependency on a small number of high-value customers.
-
----
-
-## 4. Product Demand by Country
+##  Product Demand by Country
 
 ### Objective
 
@@ -301,21 +399,6 @@ Data quality issues: The raw transaction data required data cleaning and prepara
 6. Geographic analysis limitations: Country-level differences in sales can be identified, but the available data does not explain external factors such as market size, competition, local demand or economic conditions that may influence performance.
 Limited ability to establish causation: The analysis identifies trends, patterns and relationships in the data, but these observations do not necessarily prove that one factor directly caused another.
 7. Data-driven recommendations: The recommendations are based on the information available in the dataset. Additional business and operational data would be required before implementing major strategic decisions.
-
-# Skills Demonstrated
-
-- Microsoft Power BI
-- Data Cleaning
-- Data Analysis
-- Data Visualisation
-- Business Analysis
-- Sales Analysis
-- Customer Analysis
-- Geographic Analysis
-- Trend Analysis
-- Business Insight Generation
-- Data Storytelling
-- Stakeholder-focused Reporting
 
 ---
 
