@@ -172,26 +172,6 @@ The following figures were recorded from the Power BI dashboard:
 
 These figures provide numerical support for the revenue, product, and customer analysis.The monthly values show revenue fluctuations, but they do not independently establish the causes of those changes or prove recurring seasonal patterns.
 
-##  Business Recommendations
-
-### 1 Investigate Revenue Growth and Decline:
-Investigate the products and markets contributing to high-revenue months. Review the factors behind the August decline by comparing product, customer, and country-level performance.
-
-### 2 Prioritize High-Performing Products:
-Monitor leading products, maintain suitable stock availability, and evaluate product-level revenue trends before making inventory decisions.
-
-### 3 Strengthen Customer Retention:
-Develop appropriate retention strategies for high-value customers, monitor repeat purchases, and investigate opportunities to improve customer lifetime value.
-
-### 4 Improve Average Order Value:
-Evaluate product bundles, cross-selling, and complementary-product promotions to encourage customers to purchase additional items.
-
-### 5 Evaluate Market Performance:
-Prioritize investigation of high-performing markets and explore potential improvement opportunities in weaker markets. Use country-level data to guide targeted promotions and market strategies.
-
-### 6 Plan Inventory and Promotions
-Use observed revenue trends to support inventory and promotional planning. Validate recurring seasonal patterns across comparable periods before making seasonal forecasts.
-
 ##  Business Impact
 This project demonstrates how Power BI can transform retail transaction data into meaningful business intelligence.
 The dashboard supports:
@@ -266,26 +246,22 @@ The business can investigate these markets further using:
 # Key Insights
 
 ### Revenue
-
 - Monthly revenue varies throughout the year.
 - May represents one of the strongest revenue periods.
 - November also shows strong revenue performance.
 - February and August show comparatively lower revenue.
 
 ### Countries
-
 - The Netherlands and Ireland are among the strongest international markets.
 - Germany and France also contribute significant revenue and quantity sold.
 - Several European countries demonstrate strong demand.
 
 ### Customers
-
 - Revenue is concentrated among a group of high-value customers.
 - Customer ID 14646 is the highest-revenue customer shown in the analysis.
 - Maintaining relationships with high-value customers can support recurring revenue.
 
 ### Geographic Demand
-
 - European markets account for a significant portion of the international demand shown in the analysis.
 - Markets with lower demand should be evaluated further before making expansion decisions.
 
@@ -293,26 +269,21 @@ The business can investigate these markets further using:
 
 # Business Recommendations
 
-### 1. Plan Around Seasonal Revenue Patterns: Use historical revenue patterns to support inventory and marketing planning during stronger sales periods.
-
-### 2. Strengthen High-Performing International Markets: Continue monitoring markets such as the Netherlands, Ireland, Germany, and France through targeted campaigns and customer-retention initiatives.
-
-### 3. Focus on High-Value Customers:Develop retention strategies for customers generating significant revenue, including personalised communication and loyalty initiatives.
-
-### 4. Diversify the Customer Base: While retaining high-value customers, continue developing new customer segments to reduce dependency on a limited number of customers.
-
-### 5. Investigate Lower-Demand Markets
-Before expanding into lower-performing regions, conduct additional research into:
-
+1. Plan Around Seasonal Revenue Patterns
+2. Use historical revenue patterns to support inventory and marketing planning during stronger sales periods.
+3. Strengthen High-Performing International Markets Continue monitoring markets such as the Netherlands, Ireland, Germany, and France through targeted campaigns and customer-retention  initiatives.
+4. Focus on High-Value Customers Develop retention strategies for customers generating significant revenue, including personalised communication and loyalty initiatives.
+5. Diversify the Customer Base While retaining high-value customers, continue developing new customer segments to reduce dependency on a limited number of customers.
+6. Investigate Lower-Demand Markets
+   Before expanding into lower-performing regions, conduct additional research into:
 - Product demand
 - Pricing
 - Customer preferences
 - Competition
 - Market potential
 
-### 6. Use the Dashboard for Ongoing Monitoring
+7. Use the Dashboard for Ongoing Monitoring
 The Power BI dashboard can be used as a recurring management tool to monitor:
-
 - Revenue trends
 - Country performance
 - Customer contribution
@@ -321,9 +292,7 @@ The Power BI dashboard can be used as a recurring management tool to monitor:
 ---
 
 # Project Outcome
-
 This project demonstrates my ability to:
-
 - Understand business requirements
 - Clean and prepare transactional data
 - Analyse sales performance
