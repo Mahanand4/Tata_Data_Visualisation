@@ -57,11 +57,9 @@ A Revenue field was used to analyze sales performance.
 ---
 
 ## Data Preparation
-
 The dataset was prepared before visualisation to improve the quality and relevance of the analysis.
 
 The main preparation steps included:
-
 - Removed transactions containing negative quantities.
 - Removed transactions containing negative unit prices.
 - Focused the analysis on valid sales transactions.
@@ -139,19 +137,16 @@ DISTINCTCOUNT('Online Retail Data Set'[InvoiceNo])
 ##  Key Findings and Analysis
 
 ###  Revenue Analysis
-
 - The dashboard displays total revenue of approximately **1.60M**.
 - Monthly revenue analysis highlights fluctuations across the observed period. May and November 2011 recorded strong revenue performance, while August 2011 showed a lower value than May.
 - These differences provide opportunities to investigate the products, customers, and markets associated with revenue changes.
 
 ###  Product Revenue Analysis
-
 - The Top 10 Products by Revenue chart identifies the products generating the highest revenue.
 - The Top 10 products contribute approximately **14.92% of total revenue**, according to the dashboard KPI.
 - This analysis helps identify important revenue-generating products and supports product-level inventory and sales planning.
 
 ###  Customer Revenue Analysis
-
 - The Top 10 customers contribute approximately **49.74% of total revenue**, according to the dashboard KPI.
 - This indicates that a substantial share of revenue is associated with a relatively small group of customers.
 - Customer contribution analysis can support customer retention, relationship management, and targeted marketing strategies.
@@ -161,13 +156,11 @@ DISTINCTCOUNT('Online Retail Data Set'[InvoiceNo])
 - AOV measures average revenue per distinct invoice under the selected filters. It can help evaluate purchasing value and assess opportunities to increase the value of customer orders.
 
 ###  Market Analysis
-
 - The dashboard compares revenue across countries, including the Netherlands, EIRE, Germany, France, and Australia.
 - The Top 5 Countries by Revenue chart helps identify markets with strong revenue contributions. The monthly revenue trends chart supports comparisons of market performance over time.
 - Further investigation is needed to establish the causes of market-level growth or decline.
 
 ##  Numerical Evidence
-
 The following figures were recorded from the Power BI dashboard:
 - **Total Revenue:** Approximately 1.60M.
 - **Top 10 Customer Revenue Contribution:** 49.74% of total revenue.
@@ -200,9 +193,7 @@ Prioritize investigation of high-performing markets and explore potential improv
 Use observed revenue trends to support inventory and promotional planning. Validate recurring seasonal patterns across comparable periods before making seasonal forecasts.
 
 ##  Business Impact
-
 This project demonstrates how Power BI can transform retail transaction data into meaningful business intelligence.
-
 The dashboard supports:
 
 - Monitoring overall revenue performance.
@@ -214,7 +205,6 @@ The dashboard supports:
 - Making evidence-based business recommendations.
 
 ## Skills Demonstrated
-
 - Data Cleaning and Transformation
 - Power Query
 - DAX Measures
@@ -238,62 +228,30 @@ The dashboard supports:
 Identify the strongest international markets based on revenue and quantity sold, excluding the United Kingdom.
 
 ### Visualisation
-
 A clustered column chart compares revenue and quantity across the top 10 countries.
-
-### Key Insight
-
-The Netherlands and Ireland show particularly strong performance compared with several other countries in both revenue and quantity sold.
-
-Germany and France also represent significant markets, followed by Australia and other countries included in the analysis.
-
-### Business Implication
-
-These markets can be monitored closely for:
-
-- Customer retention
-- Targeted marketing
-- Localised promotions
-- Product availability
-- Continued sales growth
 
 ---
 
 ##  Top 10 Customers by Revenue
 
 ### Objective
-
 Identify the customers contributing the highest revenue.
 
 ### Visualisation
-
 A column chart ranks the top 10 customers according to revenue generated.
-
-### Key Insight
-
-The analysis shows that revenue is distributed across several high-value customers, although the leading customer contributes substantially more revenue than the remaining customers.
-The highest-revenue customer shown in the analysis is Customer ID 14646.
 
 ##  Product Demand by Country
 
 ### Objective
-
 Understand geographic differences in product demand and identify markets that may require further investigation.
 
 ### Visualisation
-
-A geographic map was used to display product demand based on quantity purchased, excluding the United Kingdom.
-
-Larger bubbles represent countries with higher purchase quantities.
+A geographic map was used to display product demand based on quantity purchased, excluding the United Kingdom.Larger bubbles represent countries with higher purchase quantities.
 
 ### Key Insight
-
-The analysis shows strong demand across several European markets, particularly the Netherlands, Ireland, Germany, and France.
-
-Other markets also show demand, although at comparatively lower levels.
+The analysis shows strong demand across several European markets, particularly the Netherlands, Ireland, Germany, and France. Other markets also show demand, although at comparatively lower levels.
 
 ### Business Implication
-
 The business can investigate these markets further using:
 
 - Customer research
@@ -335,24 +293,15 @@ The business can investigate these markets further using:
 
 # Business Recommendations
 
-### 1. Plan Around Seasonal Revenue Patterns
+### 1. Plan Around Seasonal Revenue Patterns: Use historical revenue patterns to support inventory and marketing planning during stronger sales periods.
 
-Use historical revenue patterns to support inventory and marketing planning during stronger sales periods.
+### 2. Strengthen High-Performing International Markets: Continue monitoring markets such as the Netherlands, Ireland, Germany, and France through targeted campaigns and customer-retention initiatives.
 
-### 2. Strengthen High-Performing International Markets
+### 3. Focus on High-Value Customers:Develop retention strategies for customers generating significant revenue, including personalised communication and loyalty initiatives.
 
-Continue monitoring markets such as the Netherlands, Ireland, Germany, and France through targeted campaigns and customer-retention initiatives.
-
-### 3. Focus on High-Value Customers
-
-Develop retention strategies for customers generating significant revenue, including personalised communication and loyalty initiatives.
-
-### 4. Diversify the Customer Base
-
-While retaining high-value customers, continue developing new customer segments to reduce dependency on a limited number of customers.
+### 4. Diversify the Customer Base: While retaining high-value customers, continue developing new customer segments to reduce dependency on a limited number of customers.
 
 ### 5. Investigate Lower-Demand Markets
-
 Before expanding into lower-performing regions, conduct additional research into:
 
 - Product demand
@@ -362,7 +311,6 @@ Before expanding into lower-performing regions, conduct additional research into
 - Market potential
 
 ### 6. Use the Dashboard for Ongoing Monitoring
-
 The Power BI dashboard can be used as a recurring management tool to monitor:
 
 - Revenue trends
@@ -384,8 +332,6 @@ This project demonstrates my ability to:
 - Analyse customer and country performance
 - Translate data findings into business recommendations
 - Communicate analytical results to business stakeholders
-
-The project demonstrates an end-to-end approach to transforming retail transaction data into business-focused insights and actionable recommendations.
 
 ---
 
